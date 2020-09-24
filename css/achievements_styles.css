@@ -7,6 +7,11 @@
   width = 300px;
   height = 100px;
 }
+
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
 .2 {
 background-color: lightblue}
 .center {
@@ -25,9 +30,7 @@ body {
   display: grid;
 }
 
-.zoom:hover {
-  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
+
 
 :root {
   --background: rgba(33, 157, 251, .85);
