@@ -1,33 +1,61 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
 
 .zoom {
-  padding: 100;
   transition: transform .2s; /* Animation */
-  margin: 100;
-  width = 300px;
-  height = 100px;
+
 }
-.2 {
-background-color: lightblue}
+
+.zoom:hover {
+  transform: scale(2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.rect1 {
+position: relative;
+padding-top: 100px;
+padding-bottom: 100px;
+border: 1px solid black;
+height: 400px;
+margin: 2px;
+background-color: #6f2828;
+}
+
+.rect2 {
+position: relative;
+padding-top: 100px;
+padding-bottom: 100px;
+border: 1px solid black;
+height: 400px;
+margin: 2px;
+background-color: #29556d;
+}
+
+.rect3 {
+position: relative;
+padding-top: 100px;
+padding-bottom: 100px;
+border: 1px solid black;
+height: 400px;
+margin: 2px;
+background-color: #6f2828;
+}
+
+.rect4 {
+position: relative;
+padding-top: 100px;
+padding-bottom: 100px;
+border: 1px solid black;
+height: 400px;
+margin: 2px;
+background-color: #29556d;
+}
+
 .center {
-    text-align : center;
-}
-h2 {display: block;
 text-align: center;
-font-size: 2em;
-margin-top: 3.67em;
-margin-bottom: 5.67em;
-margin-left: 0;
-margin-right: 0;
-font-weight: bold;
- }
+}
 body {
   display: grid;
 }
 
-.zoom:hover {
-  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
 
 :root {
   --background: rgba(33, 157, 251, .85);
