@@ -190,7 +190,24 @@ nav a:hover {
     transform: scale(1,1);
   }
 }
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
 
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
 .dropdown {
   float: left;
   overflow: hidden;
@@ -208,6 +225,12 @@ nav a:hover {
   margin: 0; /* Important for vertical align on mobile phones */
 }
 
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgba(198, 230, 255, .85);
+}
+
+/* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -235,8 +258,4 @@ nav a:hover {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
-}
-
-.droplink{
-  font-size: 16px;
 }
