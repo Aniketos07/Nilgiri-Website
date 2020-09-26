@@ -4,75 +4,38 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Hostel Mess</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <link rel="icon" href="https://i.pinimg.com/originals/4e/24/f5/4e24f523182e09376bfe8424d556610a.png">
-        <style>
-            #logo {
-                width: 50px;
-                height: 50px;
-                border-radius: 25px;
-                margin: 15px;
-
-            }
-            #parent {
-                height: 100vh;
-                display: flex;
-            }
-            #left {
-                width: 15vw;
-                background-color: rgba(199,231,235,1);
-            }
-            #right {
-                width: 85vw;
-                background-color: whitesmoke;
-                overflow-y: auto;
-            }
-            html, body {
-                min-height: 100vh;
-                height: 100vh;
-                width: 100vw;
-                font-size: 1vw;
-            }
-            p {
-                flex-wrap: wrap;
-                padding-left: 0.5vw;
-                padding-top: 0.25vw;
-                padding-right: 0.75vw;
-            }
-            #Contact {
-                border: 3px solid black;
-                padding: 0.5vw;
-                margin: 0.25vw;
-            }
-            #bottom {
-                height: 10%;
-                width: 100%;
-                background-color: rgba(33,157,251,0.85);
-            }
-        </style>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+        <link rel="icon" href="https://i.pinimg.com/originals/4e/24/f5/4e24f523182e09376bfe8424d556610a.png"/>
+        <link rel="stylesheet" href="mess.css">
+        <script src="mess.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div style="height: 15%; width: 100%; background-color: rgba(33,157,251,0.85); display: flex; align-items: center;">
-            <div style="margin-left: 10px; margin-right: 5px;">
+        <div id="top-div">
+            <div id="img-div">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSwQYntnIwD4nFZq6D8TePSBQf3rOZlDh6LRA&usqp=CAU" alt="Nilgiri Logo" id = "logo">
+            </div>  
+            <div id="head-div">
+                <b>Mess: Nilgiri Hostel</b>
             </div>
-            <div style="margin-left: 5px;" >
-                <b style="font-size: 32px;">Mess: Nilgiri Hostel</b>
-            </div>
-            
+            <button class="menu_btn" onclick="Nav()"><i class="fas fa-dragon"></i></button>
         </div>
-        <hr style="background-color: black; height: 0.5vw; margin: 0;">
+        <hr class="hr"> 
         <div id="parent">
             <div id="left">
-                <u><h4 style="margin-left: 1vw">Mess:</h4></u>
-                <ul style="margin-top: 0;">
+                <u><h4>Mess:</h4></u>
+                <ul>
                     <li><a href="#">Hostel's Mess menu</a></li>
                     <li><a href="#">Night Mess menu</a></li>
-                    <li><a href="#">Mess meeting minutes (month_name)</a></li>
+                    <li><a href="#">Mess meeting minutes<br>(month_name)</a></li>
                 </ul>
             </div>
             <div id="right">
-                <h4 style="padding-left: 0.5vw; padding-top: 0.25vw;"><u>Welcome to Mess Section</u></h4>
+                <h4><u>Welcome to Mess Section</u></h4>
+                <div id="para-div">
                 <p>
                     This page provides all the important information regarding hostel's mess (both internal and night mess). You can find all sorts of information like 
                     mess menu, mess timings, mess-meeting minutes and mess related contact information. At the same time you can also provide suggestions that you would
@@ -90,30 +53,31 @@
                 <p>    
                     Night Mess' Timings: ________
                 </p>
+                </div>
                 <br>
-                <div style="border: 3px solid black; width: 80vw;">
-                <h5 style="margin-bottom: 1vw; padding-left: 0.5vw; padding-top: 0.25vw;"><b><u>Suggestions Form</u></b></h5>
-                <form style="border-width: 0.25vw; padding-left: 0.5vw; margin-bottom: 0.75vw;">
-                    <div class="form-group row" style="align-items: center; width: 60vw">
-                        <label for="Student_Name" style="width: 6vw; margin-left: 1vw;">Name:</label>
+                <div id="form-div">
+                <h5><b><u>Suggestions Form</u></b></h5>
+                <form>
+                    <div class="form-group row form-fill">
+                        <label for="Student_Name">Name:</label>
                         <div class="col-sm-4">
                             <input type="text" class="form-control" id="Student_Name" placeholder="Enter name..">
                         </div>  
                     </div>
-                    <div class="form-group row" style="align-items: center; width: 60vw;">
-                        <label for="Entry_No" style="width: 6vw; margin-left: 1vw;">Entry Number:</label>
+                    <div class="form-group row form-fill">
+                        <label for="Entry_No">Entry Number:</label>
                         <div class="col-sm-4">
                             <input type="text" class="form-control" id="Entry_No" placeholder="Enter entry number..">
                         </div>  
                     </div>
-                    <div class="form-group row" style="align-items: center; width: 60vw;">
-                        <label for="Room_Number" style="width: 6vw; margin-left: 1vw;">Room_Number:</label>
+                    <div class="form-group row form-fill">
+                        <label for="Room_Number">Room Number:</label>
                         <div class ="col-sm-4">
                             <input type="text" class="form-control" id="Room_Number" placeholder="Enter room number (optional) .." >
                         </div>    
                     </div>
-                    <div class="form-group" style="width: 75vw;">
-                        <label for="Suggestions" style="margin-left: 0.25vw;">Suggestions:</label>
+                    <div class="form-group" id="sug-div">
+                        <label for="Suggestions" id="sug-label">Suggestions:</label>
                         <textarea class="form-control" id="Suggestions" rows="3" placeholder="Enter suggestions..."></textarea>
                     </div>
                     <div>
@@ -122,20 +86,17 @@
                 </form>
                 </div>
                 <p>
-                    <h5 style="padding-left: 0.5vw;"><b><u>Important Contacts:</u></b></h5>
+                    <h5><b><u>Important Contacts:</u></b></h5>
                     <ul>
                         <li>...</li>
                         <li>...</li>
                         <li>...</li>
                     </ul>
                 </p>
-                <br><br><br><br><br><br>
+                <br>
             </div>
         </div>
-        <hr style="background-color: black; height: 0.5vw; margin: 0;">
+        <hr class="hr">
         <div id="bottom"></div>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     </body>
 </html>
