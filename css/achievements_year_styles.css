@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
 
+.alignment-box {
+position: absolute;
+margin-left: 300px;  /* Put your nav-bar width + 10 here */
+margin-top: 80px;
+height:600px;
+border: 1px solid black;
+}
+
+.content {
+border: 1px solid black;}
+
+.sub-headings {
+border: 1px solid black;
+
+}
+
 :root {
   --background: rgba(33, 157, 251, .85);
 }
