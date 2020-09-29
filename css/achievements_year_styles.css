@@ -4,14 +4,42 @@
 position: absolute;
 margin-left: 300px;  /* Put your nav-bar width + 10 here */
 margin-top: 80px;
-height:600px;
+height:1200px;
+width: 600px;
 border: 1px solid black;
 }
 
-.content {
-border: 1px solid black;}
+.achiever-box {
+position:absolute;
+margin-left: 25px;
+height:850px;
+width: 550px;
+background-color: white;
+border: 1 px solid black;}
 
+.his-pic {
+position:absolute;
+border:1px solid black;
+height: 300px;
+width: 300px;
+margin-left: 125px;
+}
+
+.para {
+text-align: left;
+}
+.description-of-achievements {
+position:absolute;
+margin-left 0px;
+margin-top: 350px;
+border: 1px solid black;
+height:450px;
+width: 500px;
+}
 .sub-headings {
+font-family:Copperplate;
+font-style:normal;
+text-align: center;
 border: 1px solid black;
 
 }
